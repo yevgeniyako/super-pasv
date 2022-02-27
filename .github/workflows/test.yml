@@ -20,7 +20,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install dependencies
-      run: nmp i
+      run: npm i
     - name: Run API tests
       env:
         BASE_URL: ${{ secrets.BASE_URL }}
